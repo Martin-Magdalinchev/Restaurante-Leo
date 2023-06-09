@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria Passione</title>
+  <link rel="stylesheet" href="pizzaria_styles.css"> <!-- Link to your CSS file -->
+  <style>
+    /* Fixed position for the navbar */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main {
+      padding-top: 80px; /* Add padding to the top of the content to avoid overlap with fixed navbar */
+    }
+
+    #home {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Navigation menu -->
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="language-container">
+      <a href="#" class="language-link" data-language="-en">
+        <img src="flag-en.png" alt="English">
+      </a>
+      <a href="#" class="language-link" data-language="-pt">
+        <img src="flag-pt.png" alt="Português">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <!-- Introduction and presentation -->
+      <h1>Welcome to Pizzaria Passione</h1>
+      <p>Experience the passion of authentic Italian pizza.</p>
+      <p>Indulge in our delicious handcrafted pizzas made with the finest ingredients.</p>
+    </section>
+
+    <section id="menu">
+      <!-- Menu section -->
+      <h2>Menu</h2>
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="pizza_example.jpg" alt="Pizza 1">
+        </div>
+        <div class="item-details">
+          <h3>Margherita</h3>
+          <p class="item-price">$10.99</p>
+          <p class="item-description">Classic pizza with fresh tomato sauce, mozzarella cheese, and basil leaves.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="pizza_example.jpg" alt="Pizza 2">
+        </div>
+        <div class="item-details">
+          <h3>Pepperoni</h3>
+          <p class="item-price">$12.99</p>
+          <p class="item-description">Delicious pizza topped with pepperoni slices and melted cheese.</p>
+        </div>
+      </div>
+      <!-- Add more menu items here -->
+    </section>
+
+    <section id="about">
+      <!-- About section -->
+      <h2>About Pizzaria Passione</h2>
+      <p>Pizzaria Passione is a family-owned pizzeria that has been serving the community for over 20 years.</p>
+      <p>We take pride in our traditional recipes and the quality of our ingredients.</p>
+    </section>
+
+    <section id="contact">
+      <!-- Contact section -->
+      <h2>Contact Us</h2>
+      <p>For reservations or inquiries, please contact us:</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Email: info@pizzariapassione.com</p>
+      <p>Address: 123 Main St, City, State</p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer content -->
+    <p>&copy; 2023 Pizzaria Passione. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add scroll event listener to update the class on the body element
+    window.addEventListener('scroll', function() {
+      var scrolled = window.scrollY > 0;
+      document.body.classList.toggle('scrolled', scrolled);
+    });
+  </script>
+</body>
+</html>
